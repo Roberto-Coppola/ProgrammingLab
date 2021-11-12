@@ -1,1 +1,2 @@
 # ProgrammingLab
+$ python hello.py
