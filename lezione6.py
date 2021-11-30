@@ -1,6 +1,8 @@
 class CSVfile():
     
     def __init__(self, name):
+        if not isinstance(name, str):
+                raise Exception ('Il nome del file("{}") non è una stringa'.format(name))
         try:
             aper= open(name, 'r')#self.name
             aper.read()[0:1]
@@ -22,6 +24,6 @@ class CSVfile():
         except AttributeError:#scegliere tra le due righe seguenti:
             print('no')
             #pass
-myobject=CSVfile('shapoo_sales.csv')
+myobject=CSVfile(5)
 myobject2=myobject.get_data()
 print(myobject2)
