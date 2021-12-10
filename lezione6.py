@@ -1,4 +1,4 @@
-class CSVfile():
+    class CSVfile():
     
     def __init__(self, name):
         if not isinstance(name, str):
